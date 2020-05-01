@@ -1,0 +1,11 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+  - image: gcr.io/cyrildiagne-ml/basnet-http
+    docker:
+      dockerfile: ./Dockerfile
+deploy:
+  kubectl:
+    manifests:
+      - deploy/knative.yaml

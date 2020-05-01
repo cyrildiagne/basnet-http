@@ -1,0 +1,14 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: basnet-http
+  namespace: default
+spec:
+  template:
+    spec:
+      containers:
+        - image: gcr.io/cyrildiagne-ml/basnet-http
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+

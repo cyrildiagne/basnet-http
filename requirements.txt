@@ -1,0 +1,7 @@
+Flask==1.1.1
+flask-cors==3.0.8
+gunicorn==19.9.0
+numpy==1.15.2
+scikit-image==0.14.0
+Pillow==5.2.0
+torchvision==0.2.1
