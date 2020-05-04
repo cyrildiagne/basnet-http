@@ -28,6 +28,8 @@ curl -F "data=@test.jpg" http://localhost:8080 -o result.png
 
 ### Option 1 - Locally with virtualenv
 
+Requires Python v3.6+
+
 ```bash
 virtualenv venv
 venv/bin/activate
