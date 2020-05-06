@@ -4,6 +4,8 @@ This is an HTTP service wrapper for [BASNet: Boundary-Aware Salient Object Detec
 
 The deploy folder contains configuration files for deployment as serverless container with Knative.
 
+It's highly recommended to run this image on a machine with a CUDA compatible Nvidia Card and minimum 6Gb of RAM.
+
 # Usage:
 
 ```bash
@@ -55,5 +57,5 @@ curl https://download.pytorch.org/models/resnet34-333f7ec4.pth -o resnet34-333f7
 
 ```
 docker build -t basnet .
-docker run --rm -p 8080:8080 basnet
+docker run --rm -p 8080:80 basnet
 ```
