@@ -9,7 +9,7 @@ It's highly recommended to run this image on a machine with a CUDA compatible Nv
 # Usage:
 
 ```bash
-docker run --rm -p 8080:80 gcr.io/cyrildiagne-ml/basnet-http
+docker run --rm -p 8080:80 docker.io/cyrildiagne/basnet-http
 ```
 
 # Test:
