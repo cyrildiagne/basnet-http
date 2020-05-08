@@ -12,6 +12,8 @@ It's highly recommended to run this image on a machine with a CUDA compatible Nv
 docker run --rm -p 8080:80 docker.io/cyrildiagne/basnet-http
 ```
 
+If you're having `empty response` issues, make sure your docker instance has 6gb of RAM as mentioned [here](https://github.com/cyrildiagne/ar-cutpaste/issues/26#issuecomment-625689672)
+
 # Test:
 
 ```bash
