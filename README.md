@@ -20,6 +20,16 @@ If you're having `empty response` issues, make sure your docker instance has 6gb
 curl -F "data=@test.jpg" http://localhost:8080 -o result.png
 ```
 
+# FAQ / Troubleshooting:
+
+**Q:** I get an empty response, or "out of memory"
+
+A: Increase your Docker RAM limit to at least 6GB: https://github.com/cyrildiagne/ar-cutpaste/issues/26#issuecomment-625689672
+
+**Q:** I get a file that is 256x256 instead of my input image's size
+
+A: That's the right output. You need to resize it to your input image's width and height. See: https://github.com/cyrildiagne/basnet-http/issues/11
+
 # Development
 
 - Clone this repository: `git clone https://github.com/cyrildiagne/BASNet-http.git`
